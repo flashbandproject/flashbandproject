@@ -1,0 +1,17 @@
+name = flashband_events
+core = 7.x
+package = Features
+dependencies[] = date
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = location_cck
+dependencies[] = node
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = node-flashband_event-body
+features[field][] = node-flashband_event-field_event_date
+features[field][] = node-flashband_event-field_event_location
+features[field][] = node-flashband_event-field_meetup_date
+features[field][] = node-flashband_event-field_meetup_description
+features[field][] = node-flashband_event-field_meetup_location
+features[node][] = flashband_event
