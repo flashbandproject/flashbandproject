@@ -97,5 +97,19 @@ function flashband_events_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_flashband_event'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'signup_date_field_flashband_event';
+  $strongarm->value = 'field_event_date';
+  $export['signup_date_field_flashband_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'signup_node_default_state_flashband_event';
+  $strongarm->value = 'enabled_on';
+  $export['signup_node_default_state_flashband_event'] = $strongarm;
+
   return $export;
 }
