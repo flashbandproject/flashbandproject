@@ -64,7 +64,7 @@ function flashband_bands_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Band description',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'display_summary' => 1,
         'text_processing' => '1',
@@ -87,7 +87,7 @@ function flashband_bands_field_default_fields() {
   $fields['node-band-field_band_members'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_band_members',
@@ -116,7 +116,7 @@ function flashband_bands_field_default_fields() {
           'view' => array(
             'args' => array(),
             'display_name' => 'entityreference_1',
-            'view_name' => 'available_bandmates',
+            'view_name' => 'available_users',
           ),
         ),
         'handler_submit' => 'Change handler',
@@ -129,7 +129,7 @@ function flashband_bands_field_default_fields() {
       'bundle' => 'band',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Start typing the name of a band member, then click the name in the box that pops up. Separate multiple members with a comma. Please ignore the parenthetical user ids.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -150,28 +150,32 @@ function flashband_bands_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_band_members',
       'label' => 'Members',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete_tags',
         'weight' => '4',
       ),
     ),
   );
 
-  // Exported field: 'node-band-field_band_event'
-  $fields['node-band-field_band_event'] = array(
+  // Exported field: 'node-band-field_flashband_event'
+  $fields['node-band-field_flashband_event'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_band_event',
+      'field_name' => 'field_flashband_event',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -197,7 +201,7 @@ function flashband_bands_field_default_fields() {
           'view' => array(
             'args' => array(),
             'display_name' => 'entityreference_1',
-            'view_name' => 'events',
+            'view_name' => 'available_events',
           ),
         ),
         'handler_submit' => 'Change handler',
@@ -231,7 +235,7 @@ function flashband_bands_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_flashband_event',
       'label' => 'Flash Band Event',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -330,6 +334,7 @@ function flashband_bands_field_default_fields() {
   t('Flash Band Event');
   t('Image');
   t('Members');
+  t('Start typing the name of a band member, then click the name in the box that pops up. Separate multiple members with a comma. Please ignore the parenthetical user ids.');
 
   return $fields;
 }
