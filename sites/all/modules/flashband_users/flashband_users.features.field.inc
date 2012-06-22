@@ -47,7 +47,7 @@ function flashband_users_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 4,
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'user',
@@ -106,10 +106,9 @@ function flashband_users_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 0,
+          'type' => 'hidden',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'user',
@@ -176,7 +175,7 @@ function flashband_users_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 3,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'user',
@@ -235,10 +234,9 @@ function flashband_users_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 1,
+          'type' => 'hidden',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'user',
