@@ -1,6 +1,7 @@
 name = Flash Band Users
 core = 7.x
 package = Flash Band
+php = 5.2.4
 dependencies[] = features
 dependencies[] = field_sql_storage
 dependencies[] = flashband_taxonomy
@@ -10,6 +11,5 @@ dependencies[] = text
 features[features_api][] = api:1
 features[field][] = user-user-field_bio
 features[field][] = user-user-field_first_name
-features[field][] = user-user-field_image
 features[field][] = user-user-field_instrument
 features[field][] = user-user-field_last_name
