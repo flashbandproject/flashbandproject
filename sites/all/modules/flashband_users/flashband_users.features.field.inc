@@ -259,11 +259,65 @@ function flashband_users_field_default_fields() {
     ),
   );
 
+  // Exported field: 'user-user-field_phone'
+  $fields['user-user-field_phone'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_phone',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'phone',
+      'settings' => array(
+        'country' => 'ca',
+      ),
+      'translatable' => '0',
+      'type' => 'phone',
+    ),
+    'field_instance' => array(
+      'bundle' => 'user',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'phone',
+          'settings' => array(),
+          'type' => 'phone',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'user',
+      'field_name' => 'field_phone',
+      'label' => 'Phone',
+      'required' => 0,
+      'settings' => array(
+        'ca_phone_parentheses' => 1,
+        'ca_phone_separator' => '-',
+        'phone_country_code' => 1,
+        'phone_default_country_code' => '1',
+        'phone_int_max_length' => 15,
+        'user_register_form' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone_textfield',
+        'weight' => '8',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('First Name');
   t('Instrument(s)');
   t('Last Name');
+  t('Phone');
   t('What instruments do you play? Separate instruments with commas, i.e. "violin, harp, spoons".');
   t('Why are you excited about the flash band project?');
 
