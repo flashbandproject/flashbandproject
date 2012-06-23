@@ -65,7 +65,7 @@ function flashband_users_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '5',
       ),
     ),
   );
@@ -108,7 +108,7 @@ function flashband_users_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'user',
@@ -126,7 +126,7 @@ function flashband_users_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -193,7 +193,7 @@ function flashband_users_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '6',
+        'weight' => '4',
       ),
     ),
   );
@@ -236,7 +236,7 @@ function flashband_users_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '5',
         ),
       ),
       'entity_type' => 'user',
@@ -254,7 +254,7 @@ function flashband_users_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '2',
       ),
     ),
   );
@@ -283,11 +283,11 @@ function flashband_users_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'phone',
           'settings' => array(),
           'type' => 'phone',
-          'weight' => 5,
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'user',
@@ -307,7 +307,7 @@ function flashband_users_field_default_fields() {
         'module' => 'phone',
         'settings' => array(),
         'type' => 'phone_textfield',
-        'weight' => '8',
+        'weight' => '3',
       ),
     ),
   );
