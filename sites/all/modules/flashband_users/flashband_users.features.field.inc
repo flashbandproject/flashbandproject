@@ -10,7 +10,7 @@
 function flashband_users_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'user-user-field_bio'
+  // Exported field: 'user-user-field_bio'.
   $fields['user-user-field_bio'] = array(
     'field_config' => array(
       'active' => '1',
@@ -31,6 +31,7 @@ function flashband_users_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -70,7 +71,7 @@ function flashband_users_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_first_name'
+  // Exported field: 'user-user-field_first_name'.
   $fields['user-user-field_first_name'] = array(
     'field_config' => array(
       'active' => '1',
@@ -91,6 +92,7 @@ function flashband_users_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -131,7 +133,7 @@ function flashband_users_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_instrument'
+  // Exported field: 'user-user-field_instrument'.
   $fields['user-user-field_instrument'] = array(
     'field_config' => array(
       'active' => '1',
@@ -152,6 +154,7 @@ function flashband_users_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -198,7 +201,7 @@ function flashband_users_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_last_name'
+  // Exported field: 'user-user-field_last_name'.
   $fields['user-user-field_last_name'] = array(
     'field_config' => array(
       'active' => '1',
@@ -219,6 +222,7 @@ function flashband_users_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -259,7 +263,7 @@ function flashband_users_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_phone'
+  // Exported field: 'user-user-field_phone'.
   $fields['user-user-field_phone'] = array(
     'field_config' => array(
       'active' => '1',
@@ -269,6 +273,7 @@ function flashband_users_field_default_fields() {
       'field_name' => 'field_phone',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'phone',
       'settings' => array(
         'country' => 'ca',
