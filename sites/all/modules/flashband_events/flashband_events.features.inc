@@ -19,7 +19,7 @@ function flashband_events_ctools_plugin_api() {
  */
 function flashband_events_node_info() {
   $items = array(
-    'flashband_event' => array(
+    'event' => array(
       'name' => t('Flash Band Event'),
       'base' => 'node_content',
       'description' => t('Create a new Flash Band event!'),

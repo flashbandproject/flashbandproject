@@ -10,8 +10,8 @@
 function flashband_events_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-flashband_event-body'
-  $fields['node-flashband_event-body'] = array(
+  // Exported field: 'node-event-body'
+  $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -39,7 +39,7 @@ function flashband_events_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -83,8 +83,8 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-flashband_event-field_event_date'
-  $fields['node-flashband_event-field_event_date'] = array(
+  // Exported field: 'node-event-field_event_date'
+  $fields['node-event-field_event_date'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -113,7 +113,7 @@ function flashband_events_field_default_fields() {
       'type' => 'datetime',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -165,8 +165,8 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-flashband_event-field_event_location'
-  $fields['node-flashband_event-field_event_location'] = array(
+  // Exported field: 'node-event-field_event_location'
+  $fields['node-event-field_event_location'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -250,7 +250,7 @@ function flashband_events_field_default_fields() {
       'type' => 'location',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -286,8 +286,8 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-flashband_event-field_meetup_date'
-  $fields['node-flashband_event-field_meetup_date'] = array(
+  // Exported field: 'node-event-field_meetup_date'
+  $fields['node-event-field_meetup_date'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -316,7 +316,7 @@ function flashband_events_field_default_fields() {
       'type' => 'datetime',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'deleted' => '0',
       'description' => 'Enter the date for the initial meet-and-greet.',
       'display' => array(
@@ -368,8 +368,8 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-flashband_event-field_meetup_description'
-  $fields['node-flashband_event-field_meetup_description'] = array(
+  // Exported field: 'node-event-field_meetup_description'
+  $fields['node-event-field_meetup_description'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -395,7 +395,7 @@ function flashband_events_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Enter any special info about the meetup beside time and place.',
@@ -436,8 +436,8 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-flashband_event-field_meetup_location'
-  $fields['node-flashband_event-field_meetup_location'] = array(
+  // Exported field: 'node-event-field_meetup_location'
+  $fields['node-event-field_meetup_location'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -521,7 +521,7 @@ function flashband_events_field_default_fields() {
       'type' => 'location',
     ),
     'field_instance' => array(
-      'bundle' => 'flashband_event',
+      'bundle' => 'event',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',

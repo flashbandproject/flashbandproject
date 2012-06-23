@@ -168,14 +168,14 @@ function flashband_bands_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-band-field_flashband_event'
-  $fields['node-band-field_flashband_event'] = array(
+  // Exported field: 'node-band-field_event'
+  $fields['node-band-field_event'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_flashband_event',
+      'field_name' => 'field_event',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -233,7 +233,7 @@ function flashband_bands_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_flashband_event',
+      'field_name' => 'field_event',
       'label' => 'Flash Band Event',
       'required' => 1,
       'settings' => array(

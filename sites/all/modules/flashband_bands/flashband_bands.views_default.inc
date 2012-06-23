@@ -77,7 +77,7 @@ function flashband_bands_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'flashband_event' => 'flashband_event',
+    'event' => 'event',
   );
 
   /* Display: Entity Reference */
