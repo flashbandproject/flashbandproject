@@ -10,7 +10,7 @@
 function flashband_events_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-event-body'
+  // Exported field: 'node-event-body'.
   $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function flashband_events_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -83,7 +84,7 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_date'
+  // Exported field: 'node-event-field_event_date'.
   $fields['node-event-field_event_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -93,6 +94,7 @@ function flashband_events_field_default_fields() {
       'field_name' => 'field_event_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -153,7 +155,7 @@ function flashband_events_field_default_fields() {
         'module' => 'date',
         'settings' => array(
           'increment' => '1',
-          'input_format' => 'm/d/Y - H:i:s',
+          'input_format' => 'M j Y - g:i:sa',
           'input_format_custom' => '',
           'label_position' => 'above',
           'text_parts' => array(),
@@ -165,7 +167,7 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_location'
+  // Exported field: 'node-event-field_event_location'.
   $fields['node-event-field_event_location'] = array(
     'field_config' => array(
       'active' => '1',
@@ -179,6 +181,7 @@ function flashband_events_field_default_fields() {
           0 => 'lid',
         ),
       ),
+      'locked' => '0',
       'module' => 'location_cck',
       'settings' => array(
         'gmap_macro' => '[gmap ]',
@@ -286,7 +289,7 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_meetup_date'
+  // Exported field: 'node-event-field_meetup_date'.
   $fields['node-event-field_meetup_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -296,6 +299,7 @@ function flashband_events_field_default_fields() {
       'field_name' => 'field_meetup_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -368,7 +372,7 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_meetup_description'
+  // Exported field: 'node-event-field_meetup_description'.
   $fields['node-event-field_meetup_description'] = array(
     'field_config' => array(
       'active' => '1',
@@ -389,6 +393,7 @@ function flashband_events_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -436,7 +441,7 @@ function flashband_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_meetup_location'
+  // Exported field: 'node-event-field_meetup_location'.
   $fields['node-event-field_meetup_location'] = array(
     'field_config' => array(
       'active' => '1',
@@ -450,6 +455,7 @@ function flashband_events_field_default_fields() {
           0 => 'lid',
         ),
       ),
+      'locked' => '0',
       'module' => 'location_cck',
       'settings' => array(
         'gmap_macro' => '[gmap ]',
