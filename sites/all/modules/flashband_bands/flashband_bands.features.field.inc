@@ -131,7 +131,7 @@ function flashband_bands_field_default_fields() {
       'bundle' => 'band',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Start typing the name of a band member, then click the name in the box that pops up. Separate multiple members with a comma. Please ignore the parenthetical user ids.',
+      'description' => 'Hold the CTRL key to select multiple names.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -158,13 +158,9 @@ function flashband_bands_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => '60',
-        ),
-        'type' => 'entityreference_autocomplete_tags',
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
         'weight' => '4',
       ),
     ),
@@ -336,9 +332,9 @@ function flashband_bands_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Band description');
   t('Flash Band Event');
+  t('Hold the CTRL key to select multiple names.');
   t('Image');
   t('Members');
-  t('Start typing the name of a band member, then click the name in the box that pops up. Separate multiple members with a comma. Please ignore the parenthetical user ids.');
 
   return $fields;
 }
