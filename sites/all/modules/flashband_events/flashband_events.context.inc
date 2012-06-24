@@ -29,10 +29,10 @@ function flashband_events_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'sidebar_second',
+        'views-bands_by_event-block' => array(
+          'module' => 'views',
+          'delta' => 'bands_by_event-block',
+          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
         'views-musicians_by_event-block' => array(
