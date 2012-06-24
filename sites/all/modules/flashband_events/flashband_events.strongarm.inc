@@ -107,6 +107,13 @@ function flashband_events_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'signup_ignore_default_fields';
+  $strongarm->value = 1;
+  $export['signup_ignore_default_fields'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'signup_node_default_state_event';
   $strongarm->value = 'enabled_on';
   $export['signup_node_default_state_event'] = $strongarm;
