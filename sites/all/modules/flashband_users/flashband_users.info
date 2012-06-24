@@ -25,4 +25,5 @@ features[field][] = user-user-field_first_name
 features[field][] = user-user-field_instrument
 features[field][] = user-user-field_last_name
 features[field][] = user-user-field_phone
+features[variable][] = pathauto_user_pattern
 features[variable][] = realname_pattern
