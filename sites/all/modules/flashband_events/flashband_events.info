@@ -49,4 +49,5 @@ features[variable][] = signup_date_field_event
 features[variable][] = signup_ignore_default_fields
 features[variable][] = signup_node_default_state_event
 features[views_view][] = bands_by_event
+features[views_view][] = bands_by_user_and_event
 features[views_view][] = musicians_by_event
