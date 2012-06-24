@@ -10,7 +10,7 @@
 function flashband_bands_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-band-body'
+  // Exported field: 'node-band-body'.
   $fields['node-band-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function flashband_bands_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -83,7 +84,7 @@ function flashband_bands_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-band-field_band_members'
+  // Exported field: 'node-band-field_band_members'.
   $fields['node-band-field_band_members'] = array(
     'field_config' => array(
       'active' => '1',
@@ -104,6 +105,7 @@ function flashband_bands_field_default_fields() {
           0 => 'target_id',
         ),
       ),
+      'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
         'handler' => 'views',
@@ -168,7 +170,7 @@ function flashband_bands_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-band-field_event'
+  // Exported field: 'node-band-field_event'.
   $fields['node-band-field_event'] = array(
     'field_config' => array(
       'active' => '1',
@@ -189,6 +191,7 @@ function flashband_bands_field_default_fields() {
           0 => 'target_id',
         ),
       ),
+      'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
         'handler' => 'views',
@@ -249,7 +252,7 @@ function flashband_bands_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-band-field_image'
+  // Exported field: 'node-band-field_image'.
   $fields['node-band-field_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -270,6 +273,7 @@ function flashband_bands_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
