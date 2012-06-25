@@ -139,5 +139,12 @@ function flashband_bands_strongarm() {
   $strongarm->value = 1;
   $export['node_submitted_band'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_band_pattern';
+  $strongarm->value = 'events/[node:field_event]/bands/[node:title]';
+  $export['pathauto_node_band_pattern'] = $strongarm;
+
   return $export;
 }

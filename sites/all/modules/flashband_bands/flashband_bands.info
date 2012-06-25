@@ -37,6 +37,7 @@ features[variable][] = menu_parent_band
 features[variable][] = node_options_band
 features[variable][] = node_preview_band
 features[variable][] = node_submitted_band
+features[variable][] = pathauto_node_band_pattern
 features[views_view][] = available_events
 features[views_view][] = available_users
 features[views_view][] = users_by_band
