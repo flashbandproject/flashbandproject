@@ -48,6 +48,14 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'See all bands >\', \'node/!1/bands\'); ?>';
   $handler->display->display_options['footer']['area']['format'] = 'php_code';
   $handler->display->display_options['footer']['area']['tokenize'] = 1;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = FALSE;
+  $handler->display->display_options['empty']['area']['content'] = 'No bands... yet!';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_event_target_id']['id'] = 'field_event_target_id';
   $handler->display->display_options['relationships']['field_event_target_id']['table'] = 'field_data_field_event';
