@@ -33,6 +33,14 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
+  $handler->display->display_options['header']['area_1']['id'] = 'area_1';
+  $handler->display->display_options['header']['area_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_1']['field'] = 'area';
+  $handler->display->display_options['header']['area_1']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_1']['content'] = '<?php if (!user_is_anonymous()) { print l(\'<h3>Create a band!</h3>\', \'node/add/band\', array(\'html\' => TRUE)); } ?>';
+  $handler->display->display_options['header']['area_1']['format'] = 'php_code';
+  $handler->display->display_options['header']['area_1']['tokenize'] = 0;
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
@@ -151,6 +159,14 @@ function flashband_events_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area_1']['id'] = 'area_1';
+  $handler->display->display_options['header']['area_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_1']['field'] = 'area';
+  $handler->display->display_options['header']['area_1']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_1']['content'] = '<?php if(!user_is_anonymous()){ print l(\'<h2>Create a band!</h2>\', \'node/add/band\', array(\'html\' => TRUE)); } ?>';
+  $handler->display->display_options['header']['area_1']['format'] = 'php_code';
+  $handler->display->display_options['header']['area_1']['tokenize'] = 0;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
