@@ -110,7 +110,7 @@ function flashband_users_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'user',
@@ -271,6 +271,9 @@ function flashband_users_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_phone',
+      'field_permissions' => array(
+        'type' => '2',
+      ),
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -289,10 +292,9 @@ function flashband_users_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
-          'module' => 'phone',
           'settings' => array(),
-          'type' => 'phone',
-          'weight' => '2',
+          'type' => 'hidden',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'user',
