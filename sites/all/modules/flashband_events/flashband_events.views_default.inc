@@ -47,7 +47,7 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
-  $handler->display->display_options['header']['area']['content'] = '<?php print l(\'See all bands >\', \'node/!1/bands\'); ?>';
+  $handler->display->display_options['header']['area']['content'] = '<?php print l(\'See all bands &raquo;\', \'node/!1/bands\', array(\'html\' =>TRUE)); ?>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
   $handler->display->display_options['header']['area']['tokenize'] = 1;
   /* Footer: Global: Text area */
@@ -55,7 +55,7 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = FALSE;
-  $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'See all bands >\', \'node/!1/bands\'); ?>';
+  $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'See all bands &raquo;\', \'node/!1/bands\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['footer']['area']['format'] = 'php_code';
   $handler->display->display_options['footer']['area']['tokenize'] = 1;
   /* No results behavior: Global: Text area */
@@ -225,8 +225,8 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['empty'] = FALSE;
-  $handler->display->display_options['header']['area']['content'] = '<?php print l(\'< back to %1\', \'node/!1\'); ?>';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<?php print l(\'&laquo; back to %1\', \'node/!1\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
   $handler->display->display_options['header']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['footer'] = FALSE;
@@ -235,7 +235,7 @@ function flashband_events_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = FALSE;
-  $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'< back to %1\', \'node/!1\'); ?>';
+  $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'&laquo; back to %1\', \'node/!1\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['footer']['area']['format'] = 'php_code';
   $handler->display->display_options['footer']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -706,7 +706,7 @@ print realname_load(user_load(\'!1\'));
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<? print l(\'< back to %1\', \'node/!1\'); ?>';
+  $handler->display->display_options['header']['area']['content'] = '<? print l(\'&laquo; back to %1\', \'node/!1\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
   $handler->display->display_options['header']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['footer'] = FALSE;
@@ -715,7 +715,7 @@ print realname_load(user_load(\'!1\'));
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = FALSE;
-  $handler->display->display_options['footer']['area']['content'] = '<? print l(\'< back to %1\', \'node/!1\'); ?>';
+  $handler->display->display_options['footer']['area']['content'] = '<? print l(\'&laquo; back to %1\', \'node/!1\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['footer']['area']['format'] = 'php_code';
   $handler->display->display_options['footer']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -876,9 +876,7 @@ print realname_load(user_load(\'!1\'));
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
-  $handler->display->display_options['header']['area']['content'] = '<?php
-print l(\'See all musicians >\', \'node/!1/musicians\');
-?>';
+  $handler->display->display_options['header']['area']['content'] = '<?php print l(\'See all musicians &raquo;\', \'node/!1/musicians\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['header']['area']['format'] = 'php_code';
   $handler->display->display_options['header']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['footer'] = FALSE;
@@ -887,9 +885,7 @@ print l(\'See all musicians >\', \'node/!1/musicians\');
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = FALSE;
-  $handler->display->display_options['footer']['area']['content'] = '<?php
-print l(\'See all musicians >\', \'node/!1/musicians\');
-?>';
+  $handler->display->display_options['footer']['area']['content'] = '<?php print l(\'See all musicians &raquo;\', \'node/!1/musicians\', array(\'html\' => TRUE)); ?>';
   $handler->display->display_options['footer']['area']['format'] = 'php_code';
   $handler->display->display_options['footer']['area']['tokenize'] = 1;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
