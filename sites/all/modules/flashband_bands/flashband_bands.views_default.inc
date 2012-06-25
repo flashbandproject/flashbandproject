@@ -147,6 +147,11 @@ function flashband_bands_views_default_views() {
   $handler->display->display_options['fields']['realname']['empty_zero'] = 0;
   $handler->display->display_options['fields']['realname']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['realname']['link_to_user'] = 0;
+  /* Sort criterion: User: Name */
+  $handler->display->display_options['sorts']['name']['id'] = 'name';
+  $handler->display->display_options['sorts']['name']['table'] = 'users';
+  $handler->display->display_options['sorts']['name']['field'] = 'name';
+  $handler->display->display_options['sorts']['name']['expose']['label'] = 'Name';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';

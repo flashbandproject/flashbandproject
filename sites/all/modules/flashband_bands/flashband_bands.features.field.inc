@@ -131,7 +131,7 @@ function flashband_bands_field_default_fields() {
       'bundle' => 'band',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Hold the CTRL key to select multiple names.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -160,7 +160,7 @@ function flashband_bands_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'options_buttons',
         'weight' => '4',
       ),
     ),
@@ -332,7 +332,6 @@ function flashband_bands_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Band description');
   t('Flash Band Event');
-  t('Hold the CTRL key to select multiple names.');
   t('Image');
   t('Members');
 
